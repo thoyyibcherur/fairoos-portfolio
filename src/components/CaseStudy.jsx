@@ -19,7 +19,6 @@ export default function CaseStudy() {
               <h3 className="mt-4 flex min-h-[4.5rem] items-center justify-center text-2xl font-semibold">{t}</h3>
               <p className="mt-5 flex-1 text-left text-xs leading-6">{d}</p>
               <div className="relative mt-6 grid aspect-[16/10] place-items-center overflow-hidden rounded-3xl bg-forest-dark/40">
-                <span className="text-6xl">{e}</span>
                 <img src={`/images/${img}`} alt={n} className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110" onError={(ev) => (ev.currentTarget.style.display = 'none')} />
               </div>
               <a href="#" className="ml-auto mt-6 inline-flex items-center gap-1 rounded-full border border-cream/60 px-4 py-1 text-[11px] transition hover:bg-cream hover:text-forest">Explore More <HiOutlineArrowLongRight className="text-base" /></a>

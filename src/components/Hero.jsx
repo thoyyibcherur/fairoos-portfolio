@@ -22,7 +22,6 @@ export default function Hero() {
           <div className="relative flex aspect-square animate-float items-center justify-center">
             {/* Put your illustration at public/images/hero.png */}
             <img src="/images/hero.png" alt="Fairoo" className="relative z-10 h-full w-full object-contain" onError={(e) => (e.currentTarget.style.display = 'none')} />
-            <span className="absolute text-8xl">🧑‍💻</span>
           </div>
         </Reveal>
       </div>

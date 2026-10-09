@@ -27,7 +27,6 @@ export default function Projects() {
             </div>
             {/* Put mockups at public/images/project-1.png, project-2.png, project-3.png */}
             <div className="relative flex aspect-square items-center justify-center">
-              <span className="absolute text-8xl opacity-70">{p.emoji}</span>
               <img src={`/images/project-${i + 1}.png`} alt={p.name} className="relative max-h-full animate-float object-contain" onError={(e) => (e.currentTarget.style.display = 'none')} />
             </div>
           </Reveal>

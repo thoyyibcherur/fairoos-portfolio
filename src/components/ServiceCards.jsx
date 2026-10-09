@@ -25,7 +25,6 @@ export default function ServiceCards() {
                 </div>
               ) : (
                 <div className="relative mt-auto flex justify-end pt-6">
-                  <span className="absolute bottom-0 right-4 text-7xl opacity-60 transition duration-500 group-hover:scale-110">{c.e}</span>
                   <img src={`/images/${c.img}`} alt={c.t} className="relative max-h-56 object-contain md:max-h-64 transition duration-500 group-hover:scale-110" onError={(e) => (e.currentTarget.style.display = 'none')} />
                 </div>
               )}
