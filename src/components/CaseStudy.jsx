@@ -16,8 +16,8 @@ export default function CaseStudy() {
           {studies.map(([n, t, d, e, img], i) => (
             <Reveal key={n} delay={i * 150} className="group flex flex-col rounded-[2rem] bg-sage p-6 text-center text-cream transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
               <p className="text-lg opacity-90">{n}</p>
-              <h3 className="mt-4 text-2xl font-semibold">{t}</h3>
-              <p className="mt-5 text-left text-xs leading-6">{d}</p>
+              <h3 className="mt-4 flex min-h-[4.5rem] items-center justify-center text-2xl font-semibold">{t}</h3>
+              <p className="mt-5 flex-1 text-left text-xs leading-6">{d}</p>
               <div className="relative mt-6 grid aspect-[16/10] place-items-center overflow-hidden rounded-3xl bg-forest-dark/40">
                 <span className="text-6xl">{e}</span>
                 <img src={`/images/${img}`} alt={n} className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110" onError={(ev) => (ev.currentTarget.style.display = 'none')} />
