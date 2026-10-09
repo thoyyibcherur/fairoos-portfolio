@@ -14,7 +14,7 @@ export default function Contact() {
     e.preventDefault()
     const f = Object.fromEntries(new FormData(e.currentTarget))
     const body = `${f.message}\n\n${f.name}\n${f.email}\n${f.phone}`
-    window.location.href = `mailto:mohammedfairooz2002@gmail.com?subject=${encodeURIComponent('Project enquiry from ' + f.name)}&body=${encodeURIComponent(body)}`
+    window.location.href = `mailto:mohammedfairoos2002@gmail.com?subject=${encodeURIComponent('Project enquiry from ' + f.name)}&body=${encodeURIComponent(body)}`
     setSent(true)
   }
 
@@ -26,8 +26,8 @@ export default function Contact() {
           <h3 className="mt-8 text-sm font-semibold">Contact us</h3>
           <p className="text-xs text-ink/60">Looking for a web developer for your next contract.</p>
           <ul className="mt-5 space-y-3 text-sm">
-            <li className="flex items-center gap-3"><span className={dot}><FaWhatsapp /></span>+91 9544402700</li>
-            <li className="flex items-center gap-3 break-all"><span className={dot}><MdEmail /></span>mohammedfairooz2002@gmail.com</li>
+            <li className="flex items-center gap-3"><span className={dot}><FaWhatsapp /></span>+91 9946403700</li>
+            <li className="flex items-center gap-3 break-all"><span className={dot}><MdEmail /></span>mohammedfairoos2002@gmail.com</li>
             <li className="flex items-center gap-3"><span className={dot}><MdLocationOn /></span>Malappuram, Kerala</li>
           </ul>
         </Reveal>
