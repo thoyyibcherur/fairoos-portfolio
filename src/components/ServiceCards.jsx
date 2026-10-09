@@ -18,9 +18,9 @@ export default function ServiceCards() {
               <h3 className="text-center text-2xl font-semibold text-cream">{c.t}</h3>
               <p className="mt-6 text-sm leading-7 text-white/90 md:px-6">{c.d}</p>
               {c.gallery ? (
-                <div className="mt-auto grid grid-cols-4 gap-3 pt-6">
-                  {c.gallery.map((g) => (
-                    <img key={g} src={`/images/${g}`} alt="Laqtat Arabiya branding" loading="lazy" className="aspect-[4/3] w-full rounded-xl object-cover shadow-lg transition duration-500 hover:z-10 hover:scale-110 hover:-rotate-2" />
+                <div className="mt-auto grid grid-cols-2 gap-3 pt-6 md:gap-4">
+                  {c.gallery.map((g, k) => (
+                    <img key={g} src={`/images/${g}`} alt="Laqtat Arabiya branding" loading="lazy" className={`aspect-[16/10] w-full rounded-2xl object-cover shadow-xl transition duration-500 hover:z-10 hover:scale-105 hover:rotate-0 ${['-rotate-2', 'rotate-2 translate-y-3', 'rotate-1', '-rotate-1 translate-y-3'][k]}`} />
                   ))}
                 </div>
               ) : (
