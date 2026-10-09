@@ -20,10 +20,10 @@ export default function About() {
           <Reveal variant="reveal-right">
             <h3 className="font-body text-3xl font-semibold text-forest md:text-4xl">Hello, I'm Fairoo!</h3>
             <p className="mt-4 text-sm leading-relaxed text-ink/80 md:text-base">
-              Hello, I'm Mohammed Fairoos, a UI/UX designer whose aim is to make creative and complex designs easy to use and interact with. In my opinion, design is a blend of creativity, functionality and empathy where each layout, interaction and visual effect has its purpose. My design process includes analyzing users' requirements, brainstorming, sketching wireframes and prototypes and developing clean interfaces for both websites and mobile apps.
+              I am Mohammed Fairoos, a UI/UX designer dedicated to bringing concepts to life through digital experiences. I have extensive experience in designing elegant user interfaces, designing user experiences, and creating designs that look and work well. In addition, I believe in the power of design to simplify, clarify, build trust and make technology usable for all users. As a designer, I am passionate about solving user problems and creating digital products that are simple and purposeful.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-ink/80 md:text-base">
-              In my opinion, each good product begins from a person who uses it — and good design must leave a lasting impression on that person.
+              In terms of process, I start from scratch. I believe in designing everything from scratch, from wireframes and prototypes to high fidelity UI designs. From user interfaces to user journeys and user interactions, everything matters when it comes to the success of an experience. With my background in frontend development, I am also able to understand the technicalities involved in implementing my designs.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-6">
               <span className="font-logo text-3xl text-forest-dark">Mohammed Fairoos</span>
