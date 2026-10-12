@@ -5,17 +5,17 @@ import Reveal from './Reveal'
 
 const contacts = [
   [MdEmail, 'Mohammedfairoos2002@Gmail.Com', 'mailto:mohammedfairoos2002@gmail.com'],
-  [FaLinkedin, 'Linkedin.Com/In/Mohammed-Fairoos-/', '#'],
-  [FaBehance, 'Behance.Net/Mohammedfairoos', '#'],
+  [FaLinkedin, 'Linkedin.Com/In/Mohammed-Fairoos-/', 'https://www.linkedin.com/in/mohammed-fairoos-/?isSelfProfile=true'],
+  [FaBehance, 'Behance.Net/Mohammedfairoos', 'https://www.behance.net/mohammedfairoos'],
   [FaWhatsapp, '+91 9946403700', 'https://wa.me/919946403700'],
 ]
 const education = [
-  ['2025-2026', 'Advanced Diploma In Uiux & Web Development', 'Skillz Hub The Learning'],
+  ['2025-2026', 'Advanced Diploma In UI/UX & Web Development', 'Skillz Hub The Learning'],
   ['2024-2025', 'Advanced Diploma Digital Marketing & Graphic Design', 'Adsin The Learning Hub'],
   ['2021-2024', 'Bachelor Of Commerce', 'Gems Arts & Science College'],
 ]
 const experience = [
-  ['2026-2026', 'Uiux Intern', 'Dfine Digital Solutions'],
+  ['2026-2026', 'UI/UX Intern', 'Dfine Digital Solutions'],
   ['2025-2025', 'Junior Creative Designer', 'Wafae Group'],
 ]
 
@@ -59,7 +59,7 @@ export default function Resume() {
             <ul className="mt-4 space-y-3">
               {contacts.map(([I, t, h]) => (
                 <li key={t}>
-                  <a href={h} className="group flex items-center gap-3 break-all text-sm">
+                  <a href={h} target={h.startsWith('http') ? '_blank' : undefined} rel="noreferrer" className="group flex items-center gap-3 break-all text-sm">
                     <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-cream text-ink transition group-hover:bg-forest group-hover:text-cream"><I /></span>
                     {t}
                   </a>
